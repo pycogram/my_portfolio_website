@@ -270,66 +270,76 @@ body{
 
 .intro-CS .social-media-handles{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1.5rem;
+    column-gap: 10px;
     position: relative;
     justify-content: center;
     width: fit-content;
-    padding: 25px 0;
+    padding: 0;
     cursor: pointer;
+    place-items: center;
+    padding: 2.5rem 0;
+    left: 4rem;
 }
 
-.social-media-handles div{
-    display: flex;
-    position: relative;
-    justify-content: center;
-    gap: 10px;
-} 
-
-.social-media-handles div:nth-child(2){
-    gap: 60px;
-    margin: 10px 0;
-}
-
-.social-media-handles div span{
-    display: flex;
-    align-items: center;
-    align-items: center;
-    width: fit-content;
-    border-radius: 20px;
+.social-media-handles .social-btn{
+    border-radius: 25px;
+    overflow: hidden;
+    outline: none;
+    border: none;
     padding: 2px 12px;
-    gap: 4px;
     background: var(--bar-color-light);
     box-shadow: var(--box-shadow);
-    margin: 0 10px;
-    font-size: 25px;
+    align-items: center;
+    width: fit-content;
+    display: block;
 }
 
-.social-media-handles div span:hover{
+.social-media-handles .social-btn:hover{
     cursor: pointer;
     background: var(--primary-color-light-blue);
     color: var(--secondary-color-blue);
-    transition: var(--tran-06);
     font-weight: 600;
+    transition: var(--tran-06);
 }
 
-.social-media-handles div .el1:hover, 
-.tw1:hover, 
-.gt1:hover{
-    transform: translate(10px, 2px);
+.social-media-handles :nth-child(3){
+    margin-left: -8rem;
 }
 
-.social-media-handles div .ld1:hover, 
-.wt1:hover, 
+.social-media-handles :nth-child(4){
+    margin-right: -8rem;
+}
+
+.el1:hover, .fb1:hover, .gt1:hover{
+    transform: translate(10px, 0);
+}
+
+.ld1:hover, .wt1:hover, .tw1:hover{
+    transform: translate(-10px, 0);
+}
+
 .fb1:hover{
-    transform: translate(-10px, 2px);
+    transform: translate(20px, 0);
 }
 
-.social-media-handles div span box-icon{
+.wt1:hover{
+    transform: translate(-20px, 0);
+}
+
+.social-btn a{
+    display: flex;
+    gap: 5px;
+    font-size: 25px;
+}
+
+.social-btn a box-icon{
     width: 40px;
     height: 40px;
 }
 
-.social-media-handles div span h5{
+.social-btn a h5{
     font-weight: 400;
 }
 
@@ -1000,21 +1010,22 @@ body{
 
     .intro-CS .social-media-handles{
         position: absolute;
+        grid-template-columns: 1fr;
+        place-items: start;
         bottom: 12rem;
         left: -6rem;
         padding: 0;
+        row-gap: 1.0rem;
     }
 
-    .social-media-handles div{
-        display: grid;
-        justify-content: flex-start;
-        gap: 0;
-        grid-row-gap: 10px;
-    } 
+    .social-media-handles :nth-child(3){
+        margin-left: 0;
+        order: 2;
+    }
     
-    .social-media-handles div:nth-child(2){
-        gap: 0;
-        grid-row-gap: 10px;
+    .social-media-handles :nth-child(4){
+        margin-right: 0;
+        order: 1;
     }
 
     .contact .form-contact{
@@ -1152,12 +1163,16 @@ body{
     }
 
     .intro-CS .social-media-handles{
-        left: -1.5rem;
-        bottom: 9rem;
+        left: 0;
+        bottom: 12rem;
     }
 
-    .social-media-handles div span{
+    .social-media-handles div span a{
         padding: 0 12px;
+    }
+
+    .contact-box {
+        padding-top: 48rem;
     }
 
     .image-blob-background{
@@ -1180,12 +1195,12 @@ body{
         top: 0.5rem;
     }
     
-    .social-media-handles div span{
+    .social-media-handles div span a{
         margin: 0 10px;
         font-size: 22px;
     }
 
-    .social-media-handles div span box-icon{
+    .social-media-handles div span a box-icon{
         width: 30px;
     }
 
@@ -1289,14 +1304,36 @@ body{
         margin: 0 1.5rem;
     }
 
-    .intro-CS .social-media-handles{
-        bottom: 10rem;
-    }
-
     .image-blob-background{
         top: 25rem;
         left: 1rem;
         width: 95%;
+    }
+    
+    .intro-CS .social-media-handles{
+        bottom: 12rem;
+        left: 1rem;
+    }
+
+    .contact-box {
+        justify-content: flex-start;
+        gap: 15px;
+        width: fit-content;
+        padding-left: 5px;
+        padding-top: 52rem;
+    }
+
+    .btn-big p{
+        font-size: 17px;
+    }
+
+    .social-media-handles .social-btn:hover{
+        transform: translate(12px, 2px);
+    }
+
+    .container .work-container{
+        width: 98%;
+        justify-self: center;
     }
 
     .tool_name_logo .tnl_box{
@@ -1313,32 +1350,6 @@ body{
 
     .laptop_user img{
         width: 200px;
-    }
-
-    .contact-box {
-        justify-content: flex-start;
-        gap: 15px;
-        width: fit-content;
-        padding-left: 5px;
-    }
-
-    .btn-big p{
-        font-size: 17px;
-    }
-
-    .intro-CS .social-media-handles{
-        left: 0;
-    }
-
-    .social-media-handles div .ld1:hover, 
-    .wt1:hover, 
-    .fb1:hover{
-        transform: translate(10px, 2px);
-    }
-
-    .container .work-container{
-        width: 98%;
-        justify-self: center;
     }
 
     #all-service .allSS:hover{
