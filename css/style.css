@@ -422,7 +422,7 @@ body{
 
 .container .about_text h5{
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 400;
     padding: 15px 0 0 0;
 }
 
@@ -589,11 +589,6 @@ body{
     cursor: pointer;
 }
 
-/* .image-preview img{
-    height: fit-content;
-    width: fit-content;
-}  */
-
 .image-preview img:hover{
     transform: scale(1.2);
     transition: var(--tran-06);
@@ -633,7 +628,7 @@ body{
 #all-service .allSS{
     display: block;
     box-shadow: var(--box-shadow);
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 20px;
     border: 1px solid var(--non-color-dark);
     width: 300px;
@@ -694,15 +689,11 @@ body{
     color: var(--intermidary-color-thick-blue);
 }
 
-/* #view-more-btn.show span :nth-child(1){
-    
-} */
-
 .allSS h4{
     font-size: 24px;
     color: var(--secondary-color-blue);
     line-height: 30px;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
 }
 
 .allSS h4::first-letter{
@@ -713,7 +704,7 @@ body{
     font-size: 18px;
     color: var(--text1-color-dark-grey);
     line-height: 20px;
-    font-weight: 100;
+    font-weight: 400;
 }
 
 /* =============== contact =============== */
@@ -768,6 +759,7 @@ body{
     border: 1px solid var(--non-color-dark);
     padding: 2px 8px;
     margin-left: 10px;
+    opacity: 0.6;
 }
 
 .all-input span textarea{
@@ -1108,7 +1100,7 @@ body{
     .navigation-box #menu-option.active{
         pointer-events: auto;
         left: 0;
-        transition: var(--tran-10);
+        transition: var(--tran-6);
     }
 
     #menu-option h5{
