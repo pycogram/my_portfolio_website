@@ -1208,6 +1208,10 @@ body{
         margin: 0 10px;
     }
 
+    .container .tool_name_logo{
+        row-gap: 10px;
+    }
+
     .tool_name_logo .tnl_box{
         padding: 5px 10px;
         width: 310px;
