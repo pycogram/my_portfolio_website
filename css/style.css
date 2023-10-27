@@ -436,7 +436,7 @@ body{
     font-weight: 600;
     list-style-type: circle;
     color: var(--secondary-color-blue);
-    list-style-image: url(/image/blob.svg);
+    list-style-image: url(../image/blob.svg);
 }
 
 /* =============== skillset =============== */
