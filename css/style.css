@@ -1100,7 +1100,7 @@ body{
     .navigation-box #menu-option.active{
         pointer-events: auto;
         left: 0;
-        transition: var(--tran-10);
+        transition: var(--tran-06);
     }
 
     #menu-option h5{
