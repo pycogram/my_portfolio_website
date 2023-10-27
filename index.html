@@ -56,36 +56,42 @@
                 </div>
 
                 <div class="social-media-handles">
-                    <div>
-                        <span class="el1">
+                    <button class="social-btn el1">
+                        <a href="#contact_page">
                             <box-icon name='envelope' type='solid' color='#6563ff' ></box-icon>
                             <h5>email</h5>
-                        </span>
-                        <span class="ld1">
+                        </a>
+                    </button>
+                    <button class="social-btn ld1">
+                        <a href="https://www.linkedin.com/in/ifesinachi-daniel-36bb70298" target="_blank">
                             <box-icon name='linkedin-square' type='logo' color='#0177b5' ></box-icon>
                             <h5>linkedIn</h5>
-                        </span>
-                    </div>
-                    <div>
-                        <span class="tw1">
-                            <box-icon name='twitter' type='logo' color='#2daae1' ></box-icon>
-                            <h5>twitter</h5>
-                        </span>
-                        <span class="wt1">
-                            <box-icon name='whatsapp' type='logo' color='#61fd7d' ></box-icon>
-                            <h5>whatsapp</h5>
-                        </span>
-                    </div>
-                    <div>
-                        <span class="gt1">
-                            <box-icon name='github' type='logo' color='#5c6bc0' ></box-icon>
-                            <h5>github</h5>
-                        </span>
-                        <span class="fb1">
+                        </a>
+                    </button>
+                    <button class="social-btn fb1">
+                        <a href="https://wwww.facebook.com/profile.php?id=100082431237502" target="_blank">
                             <box-icon name='facebook' type='logo' color='#1877f2' ></box-icon>
                             <h5>facebook</h5>
-                        </span>
-                    </div>
+                        </a>
+                    </button>
+                    <button class="social-btn wt1">
+                        <a href="https://wa.me/qr/UFCZ6D3UGFOVI1" target="_blank">
+                            <box-icon name='whatsapp' type='logo' color='#61fd7d' ></box-icon>
+                            <h5>whatsapp</h5>
+                        </a>
+                    </button>
+                    <button class="social-btn gt1">
+                        <a href="https://github.com/pycogram" target="_blank">
+                            <box-icon name='github' type='logo' color='#5c6bc0' ></box-icon>
+                            <h5>github</h5>
+                        </a>
+                    </button>
+                    <button class="social-btn tw1">
+                        <a href="https://twitter.com/pycogram" target="_blank">
+                            <box-icon name='twitter' type='logo' color='#2daae1' ></box-icon>
+                            <h5>twitter</h5>
+                        </a>
+                    </button>
                 </div>
             </div>
 
@@ -449,28 +455,32 @@
                 </div>
             </div>
 
-            <form action="" class="form-contact" method="">
+            <form action="https://formspree.io/f/xrgwjdzb" method="POST" class="form-contact">
                 <div class="all-input">
                     <span>
                         <label for="">Name:</label>
-                        <input type="text" class="" placeholder="Ifesinachi Daniel">
+                        <input name="Name" type="text" class="" placeholder=" eg. Ifesinachi Daniel" required>
                     </span>
                     <span>
                         <label for="">Email:</label>
-                        <input type="text" class="" placeholder="Kaluifesinachi@yahoo.com">
+                        <input name="Email" type="email" class="" placeholder="eg. Kaluifesinachi@yahoo.com" required>
+                    </span>
+                    <span>
+                        <label for="">Phone Number:</label>
+                        <input name="Phone_Number" type="number" class="" placeholder="eg. +2348039151821" required>
                     </span>
                     <span>
                         <label for="">Subject:</label>
-                        <input type="text" class="" placeholder="Project offer">
+                        <input name="Subject" type="text" class="" placeholder="eg. Project offer" required>
                     </span>
                     <span>
                         <label for="">Message:</label>
-                        <textarea name="" id="" cols="30" rows="4" placeholder="Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, magnam. Veniam, neque. Ex animi molestiae dolorum, assumenda deserunt suscipit aperiam." class=""></textarea>
+                        <textarea name="Message" id="" cols="30" rows="4" placeholder="eg. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, magnam. Veniam, neque. Ex animi molestiae dolorum, assumenda deserunt suscipit aperiam." class=""></textarea>
                     </span>
                 </div>
                 
                 <div class="send-btn">
-                    <button class="">
+                    <button type="submit" class="">
                         <p class="">send</p>
                         <box-icon name='right-arrow-alt' color='#002147' ></box-icon>
                     </button>
