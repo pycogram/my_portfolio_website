@@ -1204,6 +1204,16 @@ body{
         width: 30px;
     }
 
+    .social-btn a{
+        gap: 3px;
+        font-size: 22px;
+    }
+    
+    .social-btn a box-icon{
+        width: 35px;
+        height: 35px;
+    }
+
     .container .about_text h5{
         margin: 0 10px;
     }
