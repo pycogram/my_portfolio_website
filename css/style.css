@@ -271,15 +271,13 @@ body{
 .intro-CS .social-media-handles{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 1.5rem;
-    column-gap: 10px;
     position: relative;
     justify-content: center;
     width: fit-content;
     padding: 0;
     cursor: pointer;
     place-items: center;
-    padding: 2.5rem 0;
+    padding: 1.5rem 0;
     left: 4rem;
 }
 
@@ -294,6 +292,7 @@ body{
     align-items: center;
     width: fit-content;
     display: block;
+    margin: 0.8rem 0.5rem;
 }
 
 .social-media-handles .social-btn:hover{
@@ -389,8 +388,10 @@ body{
 }
 
 .container .head_text{
-    width: fit-content;
-    place-self: center;
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    flex-wrap: nowrap;
 }
 
 .head_text h5{
@@ -435,7 +436,11 @@ body{
 
 .container .about_text h5 ul{
     width: fit-content;
-    margin: 10px 0 10px 40px;
+    position: relative;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .container .about_text h5 ul li{
@@ -462,8 +467,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 40px;
-    column-gap: 30px;
     padding-top: 30px;
 }
 
@@ -475,6 +478,7 @@ body{
     border: 1px solid var(--bar-color-light);
     width: 280px;
     cursor: pointer;
+    margin: 1.5rem 2.5rem;
 }
 
 .tool_name_logo .tnl_box:hover{
@@ -527,8 +531,6 @@ body{
     flex-wrap: wrap;
     position: relative;
     justify-content: center;
-    row-gap: 50px;
-    column-gap: 30px;
     width: fit-content;
 }
 
@@ -542,6 +544,7 @@ body{
     width: 400px;
     height: 350px;
     position: relative;
+    margin: 2rem;
 }
 
 .work-preview .label-bar{
@@ -626,8 +629,6 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    row-gap: 40px;
-    column-gap: 30px;
     padding-top: 30px;
     transition: var(--tran-10);
 }
@@ -640,6 +641,7 @@ body{
     border: 1px solid var(--non-color-dark);
     width: 300px;
     cursor: pointer;
+    margin: 1.5rem;
 }
 
 #all-service .allSS:hover{
@@ -668,7 +670,6 @@ body{
     margin: 5rem 5px;
     padding: 4px 15px;
     align-items: center;
-    column-gap: 2rem;
     border: 1px solid var(--border-blue-jeans);
     color: var(--secondary-color-blue);
     cursor: pointer;
@@ -1015,7 +1016,10 @@ body{
         bottom: 12rem;
         left: -6rem;
         padding: 0;
-        row-gap: 1.0rem;
+    }
+
+    .social-media-handles .social-btn{
+        margin: 0.5rem 0;
     }
 
     .social-media-handles :nth-child(3){
@@ -1026,6 +1030,10 @@ body{
     .social-media-handles :nth-child(4){
         margin-right: 0;
         order: 1;
+    }
+
+    .work-container .work-preview{
+        margin: 1rem 0;
     }
 
     .contact .form-contact{
@@ -1218,17 +1226,12 @@ body{
         margin: 0 10px;
     }
 
-    .container .tool_name_logo{
-        row-gap: 10px;
-    }
-
     .tool_name_logo .tnl_box{
-        padding: 5px 10px;
-        width: 310px;
+        margin: 0.8rem 0;
     }
 
-    .container .work-container{
-        row-gap: 20px;
+    .work-container .work-preview{
+        margin: 1rem 0;
     }
 
     .work-preview .label-bar{
@@ -1265,8 +1268,8 @@ body{
         padding: 10px 20px;
     }
 
-    .container #all-service{
-        row-gap: 15px;
+    #all-service .allSS{
+        margin: 0.8rem 0;
     }
 
     .allSS h4{
@@ -1278,7 +1281,9 @@ body{
     }
 
     .footer-box{
-        height: 90px;
+        height: fit-content;
+        position: relative;
+        padding: 0.5rem 0;
     }
 
     .footer-box ul{
@@ -1286,8 +1291,8 @@ body{
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
-        row-gap: 2px;
         line-height: 25px;
+        gap: 2px;
     }
 
     .footer-box ul :nth-child(1){
