@@ -129,7 +129,6 @@ body{
 
 .navigation-box #menu-option{
     display: flex;
-    gap: 15px;
     margin-right: 25px;
     font-size: 23px;
     align-items: center;
@@ -148,6 +147,7 @@ body{
     letter-spacing: 1px;
     font-weight: 600;
     opacity: 0.8;
+    margin: 0 0.6rem;
 }
 
 #menu-option h5:hover{
@@ -175,7 +175,6 @@ body{
     padding: 70px 0 15px 0;
     align-items: center;
     position: relative;
-    gap: 0px;
     width: 850px;
     left: 50%;
     transform: translateX(-50%);
@@ -1231,7 +1230,7 @@ body{
     }
 
     .work-container .work-preview{
-        margin: 1rem 0;
+        margin: 0.5rem 0;
     }
 
     .work-preview .label-bar{
