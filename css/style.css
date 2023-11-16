@@ -1225,6 +1225,14 @@ body{
         margin: 0 10px;
     }
 
+    .container .about_text h5 ul{
+        margin-left: 2rem;
+    }
+
+    .container .about_text h5 ul li{
+        font-size: 22px;
+    }
+    
     .tool_name_logo .tnl_box{
         margin: 0.8rem 0;
     }
@@ -1277,6 +1285,10 @@ body{
     
     .allSS h5{
         font-size: 18px;
+    }
+
+    .all-input span:hover{
+        transform: scale(1.01);
     }
 
     .footer-box{
